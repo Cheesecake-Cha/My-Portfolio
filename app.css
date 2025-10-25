@@ -1,0 +1,31 @@
+:root {
+  /* Core palette provided by the user */
+  --tone-1: #E8DFCA; /* warm beige */
+  --tone-2: #F5EFE6; /* dirty white */
+  --tone-3: #6D94C5; /* steel blue */
+  --tone-4: #CBDCEB; /* soft blue */
+
+  /* Derived semantic variables */
+  --bg-top: var(--tone-2);
+  --bg-bottom: var(--tone-4);
+  --panel-bg: linear-gradient(180deg, var(--tone-2), #FFFFFF);
+  --accent-1: var(--tone-3);
+  --muted-1: #65707a;
+  --panel-border: rgba(109,148,197,0.12);
+  --accent-shadow: rgba(109,148,197,0.12);
+  --text-dark: #123044;
+}
+
+html,body,#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg,var(--bg-top),var(--bg-bottom));
+  color: var(--text-dark);
+}
+
+button { font-family: inherit }
+
+/* small helper */
+.container { max-width: 1120px; margin: 0 auto; padding: 0 16px }
